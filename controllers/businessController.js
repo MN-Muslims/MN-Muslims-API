@@ -57,7 +57,7 @@ const deleteBusiness = async (req, res) => {
 }
 
 
-// Update organization
+// Update an organization
 const updateBusiness = async (req, res) => {
     const { id } = req.params
 
@@ -77,7 +77,6 @@ const updateBusiness = async (req, res) => {
 
 
 }
-
 
 
 module.exports = {
