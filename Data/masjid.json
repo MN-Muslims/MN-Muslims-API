@@ -1,0 +1,541 @@
+
+[
+ {
+  "Name": "Abubakar As-Saddique Islamic Center",
+  "Address": "2824 13th Ave S, Minneapolis, MN 55407",
+  "JumuahTimings\/Language": "First Khutbah\t12:00 PM\nSecond Khutbah\t01:00 PM",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "https:\/\/www.abuubakar.org\/"
+ },
+ {
+  "Name": "Abu Khadra Masjid",
+  "Address": "4056 7th St NE, Minneapolis, MN 55421",
+  "JumuahTimings\/Language": "1:00 PM  \n2:00 PM",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "http:\/\/www.islamiccentermn.org",
+  "SocialMedia": "FB: https:\/\/www.facebook.com\/abukhadramasjid\/\n\n",
+  "ContactInfo\/Person": 17635715604
+ },
+ {
+  "Name": "Abubakar As-Saddique Islamic Center",
+  "Address": "1201 Division St W, Faribault, MN 55021",
+  "JumuahTimings\/Language": "1:00 PM Arabic English Somali",
+  "ContactInfo\/Person": "(612) 871-8600"
+ },
+ {
+  "Name": "Al Hadi Association",
+  "Address": "17685 Juniper Path Suite # 313, Lakeville, MN 55044",
+  "JumuahTimings\/Language": "2:00PM (English)",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "https:\/\/www.alhadiassociation.com\/",
+  "ContactInfo\/Person": "(651) 456-8088\nalhadilakeville@gmail.com"
+ },
+ {
+  "Name": "Al Qurraa Masjid",
+  "Address": "277 McKnight Rd S, St Paul, MN 55119",
+  "JumuahTimings\/Language": "1:30 PM"
+ },
+ {
+  "Name": "Al-Huda Islamic Center",
+  "Address": "1401 Central Ave NW, East Grand Forks, MN 56721",
+  "JumuahTimings\/Language": "12:00 PM\n1:00 PM",
+  "SocialMedia": "https:\/\/www.facebook.com\/Al-huda-Islamic-Center-East-Grand-Forks-MN-276706629615392\/",
+  "ContactInfo\/Person": 6124589074
+ },
+ {
+  "Name": "Al-Madina Association ",
+  "Address": "2038 Bonaire Path W, Rosemount, MN 55068",
+  "JumuahTimings\/Language": "1:00 PM (English)"
+ },
+ {
+  "Name": "Anjuman-e-Asghari\n\n\nJa'fary Islamic Center",
+  "Address": "10301 Jefferson Hwy, Brooklyn Park, MN 55445",
+  "JumuahTimings\/Language": "1:15PM (English)",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "http:\/\/www.mnjamaat.com\/index.php\/en\/",
+  "SocialMedia": "https:\/\/m.facebook.com\/95458082532\/  ",
+  "ContactInfo\/Person": "763-424-4909"
+ },
+ {
+  "Name": "As-Sahabah Cultural Association",
+  "Address": "3435 Washington Dr #200, St Paul, MN 55122",
+  "JumuahTimings\/Language": "1:00 PM (English)",
+  "OrganizationInfo": "http:\/\/as-sahabah.org\/"
+ },
+ {
+  "Name": "ASSALAM MOSQUE (The Mosque of Peace)",
+  "Address": "1460 Skillman Avenue Maplewood, MN 55133",
+  "OrganizationInfo": "http:\/\/www.islamicinstituteofmn.com\/maplewood.aspx",
+  "ContactInfo\/Person": "651-748-1688"
+ },
+ {
+  "Name": "Brooklyn Park Islamic Center",
+  "Address": "2100 93rd Way, Brooklyn Park, MN 55444",
+  "JumuahTimings\/Language": "1:00 PM (English)",
+  "DailySalat(Yes\/No)": "Yes",
+  "SocialMedia": "FB: https:\/\/www.facebook.com\/bpicmn\n",
+  "ContactInfo\/Person": "Phone #: 15073133023\nEmail: bpicmn@gmail.com"
+ },
+ {
+  "Name": "Burnsville Masjid",
+  "Address": "1351 Riverwood Dr, Burnsville, MN 55337",
+  "JumuahTimings\/Language": "1:00 PM\n2:00 PM",
+  "OrganizationInfo": "http:\/\/www.islamicinstituteofmn.com\/burnsville.aspx",
+  "ContactInfo\/Person": 19528829343
+ },
+ {
+  "Name": "Central Minnesota Islamic Center - Masjid Imaam Al-Shaafi'i",
+  "Address": "390 4th Ave S, St Cloud, MN 56301",
+  "JumuahTimings\/Language": "Khutbah - 12:45 PM \nPrayer - 1:00 PM",
+  "OrganizationInfo": "No website",
+  "SocialMedia": "https:\/\/www.facebook.com\/CMICStCloud\/",
+  "ContactInfo\/Person": 3202246436
+ },
+ {
+  "Name": "Dar Abi Bakr Islamic Center",
+  "Address": "329 E Plum St, Mankato, MN 56001",
+  "JumuahTimings\/Language": "Jumuah\n\n1:00:00 PM",
+  "ContactInfo\/Person": 5073861797
+ },
+ {
+  "Name": "Dar al Arqam",
+  "Address": "8710 Central Ave NE, Blaine, MN 55434",
+  "JumuahTimings\/Language": "1 pm Urdu &amp; Arabic ",
+  "OrganizationInfo": "https:\/\/darularqammn.com",
+  "ContactInfo\/Person": "(612) 758-0501"
+ },
+ {
+  "Name": "Dar Al-Farooq Islamic CenterBloomington",
+  "Address": "8201 Park Ave S, Minneapolis, MN 55420",
+  "JumuahTimings\/Language": "12:00 PM (English)\n12:45 PM (Somali)\n1:30 PM (Arabic)",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "https:\/\/www.daralfarooq.com\/"
+ },
+ {
+  "Name": "Dar Al-Qalam Islamic Center",
+  "Address": "81 NE Lowry Ave, Minneapolis, MN 55418",
+  "JumuahTimings\/Language": "1:00 PM (English)",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "http:\/\/daralqalam.org\/services\/daily-prayers\/"
+ },
+ {
+  "Name": "Dar Omar Al-Farooq",
+  "Address": "983 17th Ave SE, Minneapolis, MN 55414",
+  "JumuahTimings\/Language": "1:15 PM",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "https:\/\/daromaralfarooq.org"
+ },
+ {
+  "Name": "Dar-Us-Salam Center",
+  "Address": "190 River Ridge Cir S, Burnsville, MN 55337",
+  "JumuahTimings\/Language": "12:30 PM English\n1:00 PM Arabic\/English \n\nThere is a code to enter the masjid: 1900#",
+  "DailySalat(Yes\/No)": "Yes",
+  "SocialMedia": "https:\/\/www.facebook.com\/DCCMN\/"
+ },
+ {
+  "Name": "Darul Uloom Islamic Center",
+  "Address": "977 5th St E, St Paul, MN 55106",
+  "JumuahTimings\/Language": "Khutbah 1:00 PM\nArabic and English",
+  "ContactInfo\/Person": 6512194179
+ },
+ {
+  "Name": "East Grand Forks Islamic Center",
+  "Address": "1500 5th Ave NE, East Grand Forks, MN 56721",
+  "OrganizationInfo": "https:\/\/east-grand-forks-islamic-center.business.site\/",
+  "ContactInfo\/Person": 2187734020
+ },
+ {
+  "Name": "Eastern Twin Cities Islamic Center ",
+  "Address": "12585 Hudson Rd S, Afton, MN 55001",
+  "JumuahTimings\/Language": "1:15 PM\n2:15 PM",
+  "OrganizationInfo": "https:\/\/www.etcic.org\/",
+  "SocialMedia": "https:\/\/www.facebook.com\/etcic\nhttps:\/\/www.instagram.com\/etcic_mn\/",
+  "ContactInfo\/Person": "651.200.3956"
+ },
+ {
+  "Name": "Eden Prairie Islamic Center",
+  "Address": "11543 K-Tel Dr, Minnetonka, MN 55343",
+  "JumuahTimings\/Language": "Currently under construction, praying at Al-Amaan",
+  "DailySalat(Yes\/No)": "No?",
+  "OrganizationInfo": "https:\/\/www.epislamiccenter.com",
+  "SocialMedia": "https:\/\/m.facebook.com\/1973582112677632\/  https:\/\/mobile.twitter.com\/epislamiccenter",
+  "ContactInfo\/Person": "(763) 339-2998",
+  "AdditionalNotes": "Tutoring and Dugsi"
+ },
+ {
+  "Name": "ICBMN-Islamic Community of Bosniaks in Minnesota",
+  "Address": "668 Broadway St NE, Minneapolis, MN 55413",
+  "JumuahTimings\/Language": "Bosniak",
+  "OrganizationInfo": "http:\/\/icbmn.org\/",
+  "ContactInfo\/Person": 6123542347
+ },
+ {
+  "Name": "ICC Masjid al Tawba",
+  "Address": "6861 Flying Cloud Dr., Eden Prairie, MN 55344",
+  "JumuahTimings\/Language": "1:15 PM (English)",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "http:\/\/www.altawba.org",
+  "SocialMedia": "https:\/\/m.facebook.com\/1029492803791245\/",
+  "ContactInfo\/Person": "952-946-6061"
+ },
+ {
+  "Name": "Imam Husain Islamic Center (Shia)",
+  "Address": "6120 Brooklyn Blvd, Minneapolis, MN 55429",
+  "JumuahTimings\/Language": "1:15:00 PM (English)",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "http:\/\/www.loveislam.org\/",
+  "SocialMedia": "N\/A",
+  "ContactInfo\/Person": "ihicmn@gmail.com\n\n+17635602225",
+  "AdditionalNotes": "Hadi Clinic "
+ },
+ {
+  "Name": "Iqra Education Center Masjid",
+  "Address": "3316 3rd St N, St Cloud, MN 56303",
+  "OrganizationInfo": "https:\/\/iqramn.org\/",
+  "ContactInfo\/Person": "3207743430\n info@iqramn.org"
+ },
+ {
+  "Name": "Irshad Islamic center",
+  "Address": "6520 Edenvale Blvd # 110, Eden Prairie, MN 55346",
+  "JumuahTimings\/Language": "12:00PM\n1:00PM\nDifferent languages Arabic, Somali, English"
+ },
+ {
+  "Name": "Islamic Center of Minnesota",
+  "Address": "1401 Gardena Ave NE, Fridley, MN 55432",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "www.islamiccentermn.org"
+ },
+ {
+  "Name": "Islamic Center of St Cloud",
+  "Address": "375 5th Ave S, St Cloud, MN 56301",
+  "SocialMedia": "https:\/\/www.facebook.com\/ICSCmn\/",
+  "ContactInfo\/Person": 3206541216
+ },
+ {
+  "Name": "Islamic Center of St Cloud",
+  "Address": "712-722 17th Ave S, St Cloud, MN 56301",
+  "SocialMedia": "https:\/\/www.facebook.com\/ICSCmn\/",
+  "ContactInfo\/Person": 3204239808
+ },
+ {
+  "Name": "Islamic Center of Twin Ports",
+  "Address": "145 W Winona St, Duluth, MN 55803",
+  "JumuahTimings\/Language": "1:15 PM (English)",
+  "OrganizationInfo": "http:\/\/ictpmn.org\/",
+  "ContactInfo\/Person": "2184618198 (TEXT ONLY)"
+ },
+ {
+  "Name": "Islamic Center of Winona ",
+  "Address": "71 W 3rd St, Winona, MN 55987",
+  "JumuahTimings\/Language": "1:30 PM",
+  "OrganizationInfo": "https:\/\/www.islamiccenterofwinona.org\/",
+  "ContactInfo\/Person": "5074598918\nislamic.center.of.winona@gmail.com"
+ },
+ {
+  "Name": "Islamic Dawah Center (Minnesota Dawah Institute)",
+  "Address": "478 University Ave W, St Paul, MN 55103",
+  "JumuahTimings\/Language": "1:00 PM\n1:45 PM",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "http:\/\/www.mndawah.net\/",
+  "SocialMedia": "https:\/\/www.facebook.com\/mndawahcenter\/\nhttps:\/\/www.instagram.com\/masjid_dawah\/\nhttps:\/\/twitter.com\/mndawah",
+  "ContactInfo\/Person": "651.703.3396\n\n6512246722"
+ },
+ 
+ {
+  "Name": "Islamic Society of Willmar",
+  "Address": "1112 Lake Ave NW, Willmar, MN 56201",
+  "JumuahTimings\/Language": "Ahmed: Called and texted",
+  "OrganizationInfo": "Not available",
+  "SocialMedia": "https:\/\/www.facebook.com\/Islamicsocietyofwillmar\/",
+  "ContactInfo\/Person": 3202352230
+ },
+ {
+  "Name": "Khalid binu Waleed ",
+  "Address": "124 W Lake St, Minneapolis, MN 55408",
+  "JumuahTimings\/Language": "Somali ",
+  "DailySalat(Yes\/No)": "Yes"
+ },
+ {
+  "Name": "Mankato Islamic Center",
+  "Address": "329 N Broad St, Mankato, MN 56001",
+  "JumuahTimings\/Language": "Jumuah \n\n1:15 PM Khutbah \n1:45 PM Prayer ",
+  "OrganizationInfo": "https:\/\/mankatoislamiccenter.org\/",
+  "SocialMedia": "https:\/\/www.facebook.com\/mankatoislamiccenter",
+  "ContactInfo\/Person": 5077797855
+ },
+ {
+  "Name": "Maple Grove Masjid",
+  "Address": "10186 Lancaster Ln N, Maple Grove, MN 55369",
+  "JumuahTimings\/Language": "12:00 PM (English)",
+  "DailySalat(Yes\/No)": "Yes??",
+  "OrganizationInfo": "https:\/\/www.facebook.com\/MapleGroveMasjid",
+  "SocialMedia": "https:\/\/www.facebook.com\/MapleGroveMasjid"
+ },
+ {
+  "Name": "MAS Blaine \nCommunity Center (BCC)",
+  "Address": "12175 Aberdeen St NE, Blaine, MN 55449",
+  "JumuahTimings\/Language": "12:00PM (English)\n1PM (English)\n2PM (English)",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "https:\/\/masmn.org\/bcc\/",
+  "ContactInfo\/Person": "Imam Walid Shadi\n612-518-6923"
+ },
+ {
+  "Name": "Masjid Abu Huraira",
+  "Address": "3055 Old Hwy 8, Minneapolis, MN 55418",
+  "JumuahTimings\/Language": "1:00PM (Arabic\/Somali\/English)",
+  "DailySalat(Yes\/No)": "Yes ",
+  "OrganizationInfo": "https:\/\/www.masjidabuhuraira.org"
+ },
+ {
+  "Name": "Masjid Abu Huraira ",
+  "Address": "538 6th Ave NW, Rochester, MN 55901"
+ },
+ {
+  "Name": "Masjid Abubakar Siddiq ",
+  "Address": "17 N Broadway Ave, Rochester, MN 55906",
+  "JumuahTimings\/Language": "12:00 PM (English)\n12:40 PM (Arabic)\n1:30 PM (English)",
+  "OrganizationInfo": "https:\/\/rochestermosque.org\/",
+  "ContactInfo\/Person": 5073580084,
+  "AdditionalNotes": "Weekend Islamic School"
+ },
+ {
+  "Name": "Masjid al Amaan",
+  "Address": "5620 Smetana Dr, Minnetonka, MN 55343",
+  "JumuahTimings\/Language": "12:00 PM (Arabic)\n1:15 PM (English)",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "https:\/\/www.alamaan.org",
+  "SocialMedia": "https:\/\/m.facebook.com\/alamaancenter",
+  "ContactInfo\/Person": "info@alamaan.org 952.451.1334\n\n"
+ },
+ {
+  "Name": "Masjid al Furqaan",
+  "Address": "1525 Glenwood Ave, Minneapolis, MN 55405",
+  "JumuahTimings\/Language": "1:00PM (Somali)",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "https:\/\/masjid-al-furqaan.business.site\/",
+  "ContactInfo\/Person": 16123774416
+ },
+ {
+  "Name": "Masjid Al-Huda - Islamic Cultural Community Center",
+  "Address": "2534 NE Central Ave, Minneapolis, MN 55418",
+  "JumuahTimings\/Language": "12:00PM (English)\n1:00PM (Arabic)",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "https:\/\/www.alhudacenter.org\/",
+  "ContactInfo\/Person": "(612) 782-3883\nAbu Atieh: (651) 434-9270"
+ },
+ {
+  "Name": "Masjid Al-Ihsan",
+  "Address": "955 W Minnehaha Ave, St Paul, MN 55104",
+  "ContactInfo\/Person": 6512075518
+ },
+ {
+  "Name": "Masjid Al-Iman, Islamic Community Center of Minnesota",
+  "Address": "1429 NE 2nd St, Minneapolis, MN 55413",
+  "JumuahTimings\/Language": "1 PM (English)",
+  "OrganizationInfo": "http:\/\/iccmn.us\/",
+  "ContactInfo\/Person": 16125887559
+ },
+ {
+  "Name": "Masjid Al-Israa",
+  "Address": "6831 Hwy 65 NE, Fridley, MN 55432",
+  "JumuahTimings\/Language": "English : 12:00 PM\nArabic : 1:00 PM",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "http:\/\/www.masjidalisraa.org\/",
+  "SocialMedia": "Not Available"
+ },
+ {
+  "Name": "Masjid Al-Wahyain",
+  "Address": "2429 University Ave W, St Paul, MN 55114",
+  "JumuahTimings\/Language": "1:30 PM",
+  "OrganizationInfo": "http:\/\/www.masjidalwahyain.com\/",
+  "ContactInfo\/Person": "(651)-703-3468"
+ },
+ {
+  "Name": "Masjid an Taqwa",
+  "Address": "1608 Como Ave, St Paul, MN 55108",
+  "JumuahTimings\/Language": "12:00PM (Arabic)\n1:00PM (English)",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "https:\/\/masmn.org\/",
+  "SocialMedia": "https:\/\/www.facebook.com\/masjid.attaqwa.mn"
+ },
+ {
+  "Name": "Masjid An-Nur",
+  "Address": "1729 N Lyndale Ave, Minneapolis, MN 55411",
+  "JumuahTimings\/Language": "1:30PM (English)",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "https:\/\/masjidannur.org\/",
+  "SocialMedia": "FB: https:\/\/www.facebook.com\/masjidannur.mpls\n",
+  "ContactInfo\/Person": "(612) 521-1749",
+  "AdditionalNotes": "Food Shelf &amp; Soup Kitchen"
+ },
+ {
+  "Name": "Masjid Ar-Rahim Islamic Center",
+  "Address": "5820 74th Ave N, Brooklyn Park, MN 55443",
+  "JumuahTimings\/Language": "12:30 PM (English)",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "http:\/\/masjidurrahimmn.org\/",
+  "SocialMedia": "https:\/\/www.facebook.com\/masjidarrhimbpmn",
+  "ContactInfo\/Person": 17637105448
+ },
+ {
+  "Name": "Masjid As-Sunnah",
+  "Address": "373 Pedersen St, St Paul, MN 55119",
+  "ContactInfo\/Person": 6518882628
+ },
+ {
+  "Name": "Masjid Bilal",
+  "Address": "7200 University Ave NE, Minneapolis, MN 55432",
+  "JumuahTimings\/Language": "12:15 PM (English)\n12:45 PM (Oromo)",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "https:\/\/www.bilalodcenter.com",
+  "SocialMedia": "https:\/\/m.facebook.com\/BILALOROMODAWACENTER\/?_rdr   https:\/\/mobile.twitter.com\/bilalodcenter",
+  "ContactInfo\/Person": "bilalodc@gmail.com   612 867 1193\n\n"
+ },
+ {
+  "Name": "Masjid Darul Hijrah",
+  "Address": "504 Cedar Ave, Minneapolis, MN 55454",
+  "JumuahTimings\/Language": "Somali ",
+  "DailySalat(Yes\/No)": "Yes"
+ },
+ {
+  "Name": "Masjid Hamza",
+  "Address": "5995 Timber Trail SE, Prior Lake, MN 55372",
+  "JumuahTimings\/Language": "1:00pm (English, Urdu, Arabic)",
+  "DailySalat(Yes\/No)": "Yes",
+  "ContactInfo\/Person": "info@almahmood.us\n763-600-2227"
+ },
+ {
+  "Name": "Karmel Masjid",
+  "Address": "2910 Pillsbury Avenue South #200, Minneapolis, MN 55408",
+  "JumuahTimings\/Language": "Somali ",
+  "DailySalat(Yes\/No)": "Yes"
+ },
+ {
+  "Name": "Masjid Omar",
+  "Address": "912 E 24th St, Minneapolis, MN 55403",
+  "JumuahTimings\/Language": "Arabic and Somali",
+  "DailySalat(Yes\/No)": "Yes"
+ },
+ {
+  "Name": "Masjid Quba",
+  "Address": "1501 S 6th St, Minneapolis, MN 55454",
+  "JumuahTimings\/Language": "Somali ",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "https:\/\/www.darul-quba.org"
+ },
+ {
+  "Name": "Masjid Rawhda",
+  "Address": "2426 E 26th St, Minneapolis, MN 55406",
+  "JumuahTimings\/Language": "Somali ",
+  "DailySalat(Yes\/No)": "Yes"
+ },
+ {
+  "Name": "Masjid Salaam Cultural Center",
+  "Address": "3141 NE Central Ave, Minneapolis, MN 55418",
+  "JumuahTimings\/Language": "1:00PM (Arabic\/English\/Somali)",
+  "OrganizationInfo": "http:\/\/masjidsalaam.com\/"
+ },
+ {
+  "Name": "MASJID SHAAFICI CULTURAL CENTER",
+  "Address": "400 Cedar Ave, Minneapolis, MN 55454",
+  "JumuahTimings\/Language": "Somali ",
+  "DailySalat(Yes\/No)": "Yes"
+ },
+ {
+  "Name": "Masjid Tawfiq",
+  "Address": "2400 Minnehaha Ave, Minneapolis, MN 55404",
+  "JumuahTimings\/Language": "Oromo\/English",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "https:\/\/www.tawfiqic.org"
+ },
+ {
+  "Name": "MCC Al Rahman",
+  "Address": "8910 Old Cedar Ave S #2049, Bloomington, MN 55425",
+  "JumuahTimings\/Language": "1:00 PM\n2:00 PM",
+  "DailySalat(Yes\/No)": "Yes",
+  "AdditionalNotes": "Rahma Clinic"
+ },
+ {
+  "Name": "Moorhead Fargo Islamic Center",
+  "Address": "2215 12th Ave S, Moorhead, MN 56560",
+  "ContactInfo\/Person": 2185120300
+ },
+ {
+  "Name": "Muslim Community Center",
+  "Address": "689 Dale St N, St Paul, MN 55103"
+ },
+ {
+  "Name": "Muslim Society of Owatonna ",
+  "Address": "509 12th St NE, Owatonna, MN 55060",
+  "OrganizationInfo": "http:\/\/www.muslimsocietyofowatonna.org\/"
+ },
+ {
+  "Name": "Nusrat Mosque (Ahmediyya)",
+  "Address": "11450 Robinson Dr, Coon Rapids, MN 55433",
+  "JumuahTimings\/Language": "???",
+  "DailySalat(Yes\/No)": "???",
+  "OrganizationInfo": "https:\/\/www.ahmadiyya.us\/members\/"
+ },
+ {
+  "Name": "NWICC\/Masjid al Kareem",
+  "Address": "3300 Plymouth Blvd, Plymouth, MN 55447",
+  "JumuahTimings\/Language": "1:00 PM (English)\n2:00 PM (English)",
+  "Daily Salat(Yes\/No)": "Yes",
+  "OrganizationInfo": "https:\/\/www.nwiccmn.org\/",
+  "SocialMedia": "https:\/\/www.facebook.com\/NorthwestIslamicCommunityCenter"
+ },
+ {
+  "Name": "Oromo American Tawhid Islamic ",
+  "Address": "430 Dale St N, St Paul, MN 55103",
+  "JumuahTimings\/Language": "12:00 PM Khutbah\n12:40 PM Salah ",
+  "Daily Salat(Yes\/No)": "Yes but not fajr prayer",
+  "OrganizationInfo": "Not available",
+  "SocialMedia": "Not available",
+  "ContactInfo\/Person": 6512226807
+ },
+ {
+  "Name": "Rochester Muslim Community Circle ",
+  "Address": "3245 19th St NW Suite #1, Rochester, MN 55901",
+  "JumuahTimings\/Language": "1:00 PM (English)",
+  "OrganizationInfo": "https:\/\/rmccmn.org\/",
+  "SocialMedia": "https:\/\/www.facebook.com\/Rochester-Muslim-Community-Circle-162479980467179\/"
+ },
+ {
+  "Name": "Saint Peter Islamic Center",
+  "Address": "622 Sunrise Dr Suite 300, St Peter, MN 56082",
+  "JumuahTimings\/Language": "1:00 PM English ",
+  "ContactInfo\/Person": 5073406300
+ },
+ {
+  "Name": "South Metro Islamic Center ",
+  "Address": "15400 S Robert Trail, Rosemount, MN 55068",
+  "JumuahTimings\/Language": "1:15PM (English)",
+  "OrganizationInfo": "https:\/\/www.southmetroic.org\/"
+ },
+ {
+  "Name": "Umatul Islam Center",
+  "Address": "3015 2nd Ave S, Minneapolis, MN 55408",
+  "JumuahTimings\/Language": "Somali ",
+  "DailySalat(Yes\/No)": "Yes"
+ },
+ {
+  "Name": "Umutul Muhammed",
+  "JumuahTimings\/Language": "Somali ",
+  "DailySalat(Yes\/No)": "Yes"
+ },
+ {
+  "Name": "Wisdom House of Mankato",
+  "Address": "222 E Walnut St, Mankato, MN 56001",
+  "JumuahTimings\/Language": "Khutbah begins at 1:00 PM",
+  "DailySalat(Yes\/No)": "Yes",
+  "OrganizationInfo": "No website",
+  "ContactInfo\/Person": 5073045056
+ },
+ {
+  "Name": "مسجد عباد الرحمن Masjid Ibadur Rahman",
+  "Address": "6001 78th Ave N, Brooklyn Park, MN 55443",
+  "JumuahTimings\/Language": "12:30PM (Somali\/English)",
+  "ContactInfo\/Person": 6122398945,
+  "AdditionalNotes": "m.m.c.center1@gmail.com"
+ }
+]
