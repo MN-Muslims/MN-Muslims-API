@@ -1,11 +1,11 @@
 const express = require('express')
 const router = express.Router()
 const {
-    getCarousels,
-} = require('../controllers/carouselController')
+    getMasjids,
+} = require('../controllers/masjidController')
 
 // GET all businesses
-router.get('/', getCarousels)
+router.get('/', getMasjids)
 
 
 // Export the router
