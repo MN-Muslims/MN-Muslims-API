@@ -7,32 +7,24 @@ const getMasjids = async (req, res) => {
     res.status(200).json(masjids)
 }
 
+// description1: {
+//     type: Schema.Types.Mixed,
+//     // required: true
+// },
+// // phone number of organization
+// description2: {
+//     type: Schema.Types.Mixed,
+//     // required: true
+// },
+// // links to businesses website, social media
+// description3: {
+//     type: Schema.Types.Mixed,
+//     // required: true
+// },
+
+// }, { timestamps: true })
 
 
-// const MongoClient = require('mongodb').MongoClient;
-// const fs = require('fs');
-
-// const excelData = fs.readFileSync('./Data/masjid.json');
-
-// const jsonData = JSON.parse(excelData);
-
-// const uri = 'mongodb+srv://noor:9ZNgRpjbdcUy7o3C@cluster0.ncrsngi.mongodb.net/?retryWrites=true&w=majority';
-// // mongodb+srv://noor:9ZNgRpjbdcUy7o3C@cluster0.ncrsngi.mongodb.net/?retryWrites=true&w=majority
-// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-
-// const getMasjids = async (req, res) => {
-//     try {
-//     await client.connect();
-//     const database = client.db('test');
-//     const collection = database.collection('masjids');
-//     const result = await collection.insertMany(jsonData);
-//     console.log(`${result.insertedCount} documents inserted.`);
-//   } finally {
-//     await client.close();
-//   }
-// }
-
-// getMasjids().catch(console.error);
 
 
 module.exports = {

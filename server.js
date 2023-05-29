@@ -3,6 +3,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const businessRoutes = require('./routes/businesses')
 const masjidRoutes = require('./routes/masjids')
+const carouselRoutes = require('./routes/carousels')
 
 // express app
 const app = express()
@@ -24,6 +25,10 @@ app.use('/api/businesses', businessRoutes)
 
 // masjid routes
 app.use('/api/masjids', masjidRoutes)
+
+
+// carousel routes
+app.use('/api/carousel', carouselRoutes)
 
 //connect to db
 mongoose.connect(process.env.MONGO_URI)

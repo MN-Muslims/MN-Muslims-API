@@ -32,6 +32,11 @@ const businessSchema = new Schema({
         type: Schema.Types.Mixed,
         required: true
     },
+    email: {
+        type: Schema.Types.Mixed,
+        required: true
+    },
+
     // operational hours
     workingHours: {
         type: Schema.Types.Mixed,

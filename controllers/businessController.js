@@ -28,10 +28,10 @@ const getBusiness = async (req, res) => {
 
 // create organization post
 const createBusiness = async(req, res) => {
-    const {title, description, address, number, services, links, workingHours} = req.body
+    const {title, description, address, number, services, links, email, workingHours} = req.body
     // add doc to db
     try{
-        const business = await Business.create({title, description, address, number, services, links, workingHours})
+        const business = await Business.create({title, description, address, number, services, links, email, workingHours})
         res.status(200).json(business)
     } catch (error) {
         res.status(400).json({error: error.message})
