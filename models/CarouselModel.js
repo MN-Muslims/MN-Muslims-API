@@ -18,6 +18,15 @@ const carouselSchema = new Schema({
         type: Schema.Types.Mixed,
         // required: true
     },
+    image1: {
+        type: Schema.Types.Mixed,
+    },
+    image2: {
+        type: Schema.Types.Mixed,
+    },
+    image3: {
+        type: Schema.Types.Mixed,
+    },
 
 }, { timestamps: true })
 
