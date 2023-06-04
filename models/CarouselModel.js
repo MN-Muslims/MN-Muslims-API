@@ -19,13 +19,13 @@ const carouselSchema = new Schema({
         // required: true
     },
     image1: {
-        type: Buffer,
+        type: Schema.Types.Mixed,
     },
     image2: {
-        type: Buffer,
+        type: Schema.Types.Mixed,
     },
     image3: {
-        type: Buffer,
+        type: Schema.Types.Mixed,
     },
 
 }, { timestamps: true })
