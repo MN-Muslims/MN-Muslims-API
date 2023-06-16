@@ -7,7 +7,7 @@ const carouselRoutes = require('./routes/carousels')
 const multer = require('multer');
 const path = require('path');
 
-// Configure multer storage
+// Configure multer storage for the first image uploader
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
       cb(null, 'uploads/');
@@ -16,10 +16,23 @@ const storage = multer.diskStorage({
       const ext = path.extname(file.originalname);
       cb(null, Date.now() + ext);
     },
-  });
-    
-  const upload = multer({ storage });
-  
+});
+
+const upload = multer({ storage });
+
+// Configure multer storage for the second image uploader
+const storage2 = multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null, 'uploads2/');
+    },
+    filename: function (req, file, cb) {
+      const ext = path.extname(file.originalname);
+      cb(null, Date.now() + ext);
+    },
+});
+
+const upload2 = multer({ storage: storage2 });
+
 // express app
 const app = express()
 
@@ -34,18 +47,16 @@ app.use((req, res, next) => {
 let cors = require("cors");
 app.use(cors());
 
-
 // routes
 app.use('/api/businesses', businessRoutes)
 
 // masjid routes
 app.use('/api/masjids', masjidRoutes)
 
-
 // carousel routes
 app.use('/api/carousel', carouselRoutes)
 
-//connect to db
+// connect to db
 mongoose.connect(process.env.MONGO_URI)
     .then(() => {
         app.listen(process.env.PORT, () => {
@@ -56,18 +67,25 @@ mongoose.connect(process.env.MONGO_URI)
         console.log(error)
     })
 
-// Define the image schema
+// Define the first image schema
 const imageSchema = new mongoose.Schema({
-  _id: mongoose.Schema.Types.ObjectId, // Add this line
+  _id: mongoose.Schema.Types.ObjectId,
   filename: String,
   imageUrl: String,
 });
 
+const Image = mongoose.model('Image', imageSchema);
 
+// Define the second image schema
+const imageSchema2 = new mongoose.Schema({
+  _id: mongoose.Schema.Types.ObjectId,
+  filename: String,
+  imageUrl2: String,
+});
 
-  const Image = mongoose.model('Image', imageSchema);
+const Image2 = mongoose.model('Image2', imageSchema2);
 
-// Define the route for image upload
+// Define the route for the first image upload
 app.post('/uploads', upload.single('image'), async (req, res) => {
   try {
     if (!req.file) {
@@ -77,7 +95,6 @@ app.post('/uploads', upload.single('image'), async (req, res) => {
     const { filename } = req.file;
     const imageUrl = `http://localhost:4000/uploads/${filename}`;
 
-    // Save the image details to the database
     const image = new Image({ _id: new mongoose.Types.ObjectId(), filename, imageUrl });
     await image.save();
 
@@ -87,29 +104,81 @@ app.post('/uploads', upload.single('image'), async (req, res) => {
     res.status(500).json({ message: 'Internal Server Error' });
   }
 });
-  
-  // Add a route to fetch all images from the database
-  app.get('/uploads', async (req, res) => {
-    try {
-      const images = await Image.find();
-      res.json(images);
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ message: 'Internal Server Error' });
+
+// Define the route for the second image upload
+app.post('/uploads2', upload2.single('image'), async (req, res) => {
+  try {
+    if (!req.file) {
+      throw new Error('No file received');
     }
-  });
-  
-  // Add a route to serve individual image files
+
+    const { filename } = req.file;
+    const imageUrl2 = `http://localhost:4000/uploads2/${filename}`;
+
+    const image = new Image2({ _id: new mongoose.Types.ObjectId(), filename, imageUrl2 });
+    await image.save();
+
+    res.json(image);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
+
+// Add a route to fetch all images from the first uploader
+app.get('/uploads', async (req, res) => {
+  try {
+    const images = await Image.find();
+    res.json(images);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
+
+// Add a route to fetch all images from the second uploader
+app.get('/uploads2', async (req, res) => {
+  try {
+    const images = await Image2.find();
+    res.json(images);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
+
+// Add a route to serve individual image files from the first uploader
 app.get('/uploads/:filename', (req, res) => {
   const { filename } = req.params;
   const filePath = path.join(__dirname, 'uploads', filename);
   res.sendFile(filePath);
 });
 
-// Delete an image by ID
+// Add a route to serve individual image files from the second uploader
+app.get('/uploads2/:filename', (req, res) => {
+  const { filename } = req.params;
+  const filePath = path.join(__dirname, 'uploads2', filename);
+  res.sendFile(filePath);
+});
+
+// Delete an image by ID from the first uploader
 app.delete('/uploads/:id', async (req, res) => {
   try {
     const image = await Image.findByIdAndDelete(req.params.id);
+    if (!image) {
+      return res.status(404).json({ message: 'Image not found' });
+    }
+    res.json({ message: 'Image deleted successfully' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
+
+// Delete an image by ID from the second uploader
+app.delete('/uploads2/:id', async (req, res) => {
+  try {
+    const image = await Image2.findByIdAndDelete(req.params.id);
     if (!image) {
       return res.status(404).json({ message: 'Image not found' });
     }
