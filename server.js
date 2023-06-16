@@ -93,7 +93,7 @@ app.post('/uploads', upload.single('image'), async (req, res) => {
     }
 
     const { filename } = req.file;
-    const imageUrl = `http://localhost:4000/uploads/${filename}`;
+    const imageUrl = `https://mnmuslims-api.onrender.com/uploads/${filename}`;
 
     const image = new Image({ _id: new mongoose.Types.ObjectId(), filename, imageUrl });
     await image.save();
@@ -113,7 +113,7 @@ app.post('/uploads2', upload2.single('image'), async (req, res) => {
     }
 
     const { filename } = req.file;
-    const imageUrl2 = `http://localhost:4000/uploads2/${filename}`;
+    const imageUrl2 = `https://mnmuslims-api.onrender.com/uploads2/${filename}`;
 
     const image = new Image2({ _id: new mongoose.Types.ObjectId(), filename, imageUrl2 });
     await image.save();
