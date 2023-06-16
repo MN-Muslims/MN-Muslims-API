@@ -1,129 +1,90 @@
 require('dotenv').config()
-const express = require('express')
 const mongoose = require('mongoose')
 const businessRoutes = require('./routes/businesses')
 const masjidRoutes = require('./routes/masjids')
 const carouselRoutes = require('./routes/carousels')
+const express = require('express');
 const multer = require('multer');
 const path = require('path');
 
+// ...
+
 // Configure multer storage for the first image uploader
 const storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-      cb(null, 'uploads/');
-    },
-    filename: function (req, file, cb) {
-      const ext = path.extname(file.originalname);
-      cb(null, Date.now() + ext);
-    },
+  destination: function (req, file, cb) {
+    cb(null, 'uploads/');
+  },
+  filename: function (req, file, cb) {
+    const ext = path.extname(file.originalname);
+    cb(null, Date.now() + ext);
+  },
 });
 
 const upload = multer({ storage });
 
 // Configure multer storage for the second image uploader
 const storage2 = multer.diskStorage({
-    destination: function (req, file, cb) {
-      cb(null, 'uploads2/');
-    },
-    filename: function (req, file, cb) {
-      const ext = path.extname(file.originalname);
-      cb(null, Date.now() + ext);
-    },
+  destination: function (req, file, cb) {
+    cb(null, 'uploads2/');
+  },
+  filename: function (req, file, cb) {
+    const ext = path.extname(file.originalname);
+    cb(null, Date.now() + ext);
+  },
 });
 
 const upload2 = multer({ storage: storage2 });
 
-// express app
-const app = express()
+// ...
 
-// middleware
-app.use(express.json())
+// Define the Multer middleware function to handle uploads and errors
+function uploadMiddleware(field, modelName, imageUrlProperty) {
+  return function (req, res, next) {
+    const uploadInstance = field === 'image' ? upload : upload2;
 
-app.use((req, res, next) => {
-    console.log(req.path, req.method)
-    next()
-})
+    uploadInstance.single(field)(req, res, function (err) {
+      if (err instanceof multer.MulterError) {
+        // A Multer error occurred during upload
+        console.error(err);
+        return res.status(500).json({ message: 'Upload error' });
+      } else if (err) {
+        // An unknown error occurred during upload
+        console.error(err);
+        return res.status(500).json({ message: 'Internal Server Error' });
+      }
 
-let cors = require("cors");
-app.use(cors());
+      // File upload was successful
+      if (!req.file) {
+        // No file was received
+        return res.status(400).json({ message: 'No file received' });
+      }
 
-// routes
-app.use('/api/businesses', businessRoutes)
+      // Save the file details to the respective model
+      const { filename } = req.file;
+      const imageUrl = `https://mnmuslims-api.onrender.com/uploads${field === 'image' ? '' : '2'}/${filename}`;
 
-// masjid routes
-app.use('/api/masjids', masjidRoutes)
+      const ImageModel = field === 'image' ? Image : Image2;
+      const image = new ImageModel({ _id: new mongoose.Types.ObjectId(), filename, [imageUrlProperty]: imageUrl });
 
-// carousel routes
-app.use('/api/carousel', carouselRoutes)
-
-// connect to db
-mongoose.connect(process.env.MONGO_URI)
-    .then(() => {
-        app.listen(process.env.PORT, () => {
-            console.log('connected to db and listening on port', process.env.PORT)
+      image.save()
+        .then(() => {
+          res.json(image);
         })
-    })
-    .catch((error) => {
-        console.log(error)
-    })
-
-// Define the first image schema
-const imageSchema = new mongoose.Schema({
-  _id: mongoose.Schema.Types.ObjectId,
-  filename: String,
-  imageUrl: String,
-});
-
-const Image = mongoose.model('Image', imageSchema);
-
-// Define the second image schema
-const imageSchema2 = new mongoose.Schema({
-  _id: mongoose.Schema.Types.ObjectId,
-  filename: String,
-  imageUrl2: String,
-});
-
-const Image2 = mongoose.model('Image2', imageSchema2);
+        .catch((error) => {
+          console.error(error);
+          res.status(500).json({ message: 'Internal Server Error' });
+        });
+    });
+  };
+}
 
 // Define the route for the first image upload
-app.post('/uploads', upload.single('image'), async (req, res) => {
-  try {
-    if (!req.file) {
-      throw new Error('No file received');
-    }
-
-    const { filename } = req.file;
-    const imageUrl = `https://mnmuslims-api.onrender.com/uploads/${filename}`;
-
-    const image = new Image({ _id: new mongoose.Types.ObjectId(), filename, imageUrl });
-    await image.save();
-
-    res.json(image);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Internal Server Error' });
-  }
-});
+app.post('/uploads', uploadMiddleware('image', 'Image', 'imageUrl'));
 
 // Define the route for the second image upload
-app.post('/uploads2', upload2.single('image'), async (req, res) => {
-  try {
-    if (!req.file) {
-      throw new Error('No file received');
-    }
+app.post('/uploads2', uploadMiddleware('image', 'Image2', 'imageUrl2'));
 
-    const { filename } = req.file;
-    const imageUrl2 = `https://mnmuslims-api.onrender.com/uploads2/${filename}`;
-
-    const image = new Image2({ _id: new mongoose.Types.ObjectId(), filename, imageUrl2 });
-    await image.save();
-
-    res.json(image);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Internal Server Error' });
-  }
-});
+// ...
 
 // Add a route to fetch all images from the first uploader
 app.get('/uploads', async (req, res) => {
