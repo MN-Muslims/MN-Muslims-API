@@ -1,12 +1,16 @@
 require('dotenv').config()
 const mongoose = require('mongoose')
+
 const businessRoutes = require('./routes/businesses')
 const masjidRoutes = require('./routes/masjids')
 const carouselRoutes = require('./routes/carousels')
+const usersRoutes = require('./routes/adminusers')
+
 const express = require('express')
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
+const bcrypt = require('bcrypt');
 
 // Configure multer storage for the first image uploader
 const storage = multer.diskStorage({
@@ -71,6 +75,9 @@ app.use('/api/masjids', masjidRoutes)
 
 // carousel routes
 app.use('/api/carousel', carouselRoutes)
+
+// Users Routes
+app.use('/api/users', usersRoutes)
 
 // connect to db
 mongoose.connect(process.env.MONGO_URI)
