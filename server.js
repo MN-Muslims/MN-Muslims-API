@@ -239,7 +239,7 @@ app.get('/uploads3/:filename', (req, res) => {
 
 
 // Delete an image by ID from the first uploader
-app.delete('/uploads/:id', async (req, res) => {
+app.delete('https://mnmuslims-api.onrender.com/uploads/:id', async (req, res) => {
   try {
     const image = await Image.findByIdAndDelete(req.params.id);
     if (!image) {
@@ -262,7 +262,7 @@ app.delete('/uploads/:id', async (req, res) => {
 });
 
 // Delete an image by ID from the second uploader
-app.delete('/uploads2/:id', async (req, res) => {
+app.delete('https://mnmuslims-api.onrender.com/uploads2/:id', async (req, res) => {
   try {
     const image = await Image2.findByIdAndDelete(req.params.id);
     if (!image) {
@@ -286,7 +286,7 @@ app.delete('/uploads2/:id', async (req, res) => {
 
 
 // Delete an image by ID from the second uploader
-app.delete('/uploads3/:id', async (req, res) => {
+app.delete('https://mnmuslims-api.onrender.com/uploads3/:id', async (req, res) => {
   try {
     const image = await Image3.findByIdAndDelete(req.params.id);
     if (!image) {
