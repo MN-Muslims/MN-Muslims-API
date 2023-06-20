@@ -63,33 +63,34 @@ mongoose.connect(process.env.MONGO_URI)
     })
 
 // Define the first image schema
-const imageSchema = new mongoose.Schema({
-  _id: mongoose.Schema.Types.ObjectId,
-  filename: String,
-  imageUrl: String,
+const ImageSchema = new mongoose.Schema({
+  name: String,
+  path: String,
 });
 
-const Image = mongoose.model('Image', imageSchema);
+
+const Image = mongoose.model('Image', ImageSchema);
 
 
 
 // Define the route for the first image upload
-app.post('/uploads', upload.single('image'), async (req, res) => {
+app.post('/upload', upload.single('image'), async (req, res) => {
+  const { originalname, path } = req.file;
+
   try {
-    if (!req.file) {
-      throw new Error('No file received');
-    }
+    // Create a new image document
+    const image = new Image({
+      name: originalname,
+      path: path,
+    });
 
-    const { filename } = req.file;
-    const imageUrl = `https://mnmuslims-api.onrender.com/uploads/${filename}`;
-
-    const image = new Image({ _id: new mongoose.Types.ObjectId(), filename, imageUrl });
+    // Save the image document to the database
     await image.save();
 
-    res.json(image);
+    res.json({ message: 'Image uploaded successfully!' });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: 'Internal Server Error' });
+    res.status(500).json({ error: 'Something went wrong' });
   }
 });
 
