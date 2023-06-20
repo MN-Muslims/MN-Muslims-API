@@ -183,7 +183,7 @@ app.post('/uploads3', upload3.single('image'), async (req, res) => {
 
 
 // Add a route to fetch all images from the first uploader
-app.get('/uploads', async (req, res) => {
+app.get('https://mnmuslims-api.onrender.com/uploads', async (req, res) => {
   try {
     const images = await Image.find();
     res.json(images);
@@ -194,7 +194,7 @@ app.get('/uploads', async (req, res) => {
 });
 
 // Add a route to fetch all images from the second uploader
-app.get('/uploads2', async (req, res) => {
+app.get('https://mnmuslims-api.onrender.com/uploads2', async (req, res) => {
   try {
     const images = await Image2.find();
     res.json(images);
@@ -205,7 +205,7 @@ app.get('/uploads2', async (req, res) => {
 });
 
 // Add a route to fetch all images from the second uploader
-app.get('/uploads3', async (req, res) => {
+app.get('https://mnmuslims-api.onrender.com/uploads3', async (req, res) => {
   try {
     const images = await Image3.find();
     res.json(images);
@@ -217,21 +217,21 @@ app.get('/uploads3', async (req, res) => {
 
 
 // Add a route to serve individual image files from the first uploader
-app.get('/uploads/:filename', (req, res) => {
+app.get('https://mnmuslims-api.onrender.com/uploads/:filename', (req, res) => {
   const { filename } = req.params;
   const filePath = path.join(__dirname, 'uploads', filename);
   res.sendFile(filePath);
 });
 
 // Add a route to serve individual image files from the second uploader
-app.get('/uploads2/:filename', (req, res) => {
+app.get('https://mnmuslims-api.onrender.com/uploads2/:filename', (req, res) => {
   const { filename } = req.params;
   const filePath = path.join(__dirname, 'uploads2', filename);
   res.sendFile(filePath);
 });
 
 // Add a route to serve individual image files from the second uploader
-app.get('/uploads3/:filename', (req, res) => {
+app.get('https://mnmuslims-api.onrender.com/uploads3/:filename', (req, res) => {
   const { filename } = req.params;
   const filePath = path.join(__dirname, 'uploads3', filename);
   res.sendFile(filePath);
@@ -239,7 +239,7 @@ app.get('/uploads3/:filename', (req, res) => {
 
 
 // Delete an image by ID from the first uploader
-app.delete('/uploads/:id', async (req, res) => {
+app.delete('https://mnmuslims-api.onrender.com/uploads/:id', async (req, res) => {
   try {
     const image = await Image.findByIdAndDelete(req.params.id);
     if (!image) {
@@ -262,7 +262,7 @@ app.delete('/uploads/:id', async (req, res) => {
 });
 
 // Delete an image by ID from the second uploader
-app.delete('/uploads2/:id', async (req, res) => {
+app.delete('https://mnmuslims-api.onrender.com/uploads2/:id', async (req, res) => {
   try {
     const image = await Image2.findByIdAndDelete(req.params.id);
     if (!image) {
@@ -286,7 +286,7 @@ app.delete('/uploads2/:id', async (req, res) => {
 
 
 // Delete an image by ID from the second uploader
-app.delete('/uploads3/:id', async (req, res) => {
+app.delete('https://mnmuslims-api.onrender.com/uploads3/:id', async (req, res) => {
   try {
     const image = await Image3.findByIdAndDelete(req.params.id);
     if (!image) {
