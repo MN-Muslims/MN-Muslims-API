@@ -10,7 +10,7 @@ const express = require('express')
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 // Configure multer storage for the first image uploader
 const storage = multer.diskStorage({

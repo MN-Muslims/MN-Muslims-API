@@ -1,6 +1,6 @@
 // UserController.js
 const User = require('../models/AdminUserModel');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 const UserController = {
   register: async (req, res) => {
