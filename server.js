@@ -8,9 +8,16 @@ const usersRoutes = require('./routes/adminusers')
 
 const express = require('express')
 const multer = require('multer');
+const sharp = require('sharp')
+
 const path = require('path');
 const fs = require('fs');
 const bcrypt = require('bcryptjs');
+
+
+
+
+
 
 // Configure multer storage for the first image uploader
 const storage = multer.diskStorage({
@@ -24,6 +31,8 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage });
+
+
 
 // Configure multer storage for the second image uploader
 const storage2 = multer.diskStorage({
@@ -55,6 +64,14 @@ const upload3 = multer({ storage: storage3 });
 
 // express app
 const app = express()
+
+app.use(function (req, res, next) {
+  res.setHeader(
+    'Content-Security-Policy',
+    "default-src 'none'; font-src https://mnmuslims-api.onrender.com/uploads2/ https://mnmuslims-api.onrender.com/uploads/ https://mnmuslims-api.onrender.com/uploads3/"
+    );
+  next();
+});
 
 // middleware
 app.use(express.json())
