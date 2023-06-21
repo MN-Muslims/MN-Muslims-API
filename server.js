@@ -8,7 +8,6 @@ const usersRoutes = require('./routes/adminusers')
 
 const express = require('express')
 const multer = require('multer');
-const sharp = require('sharp')
 
 const path = require('path');
 const fs = require('fs');
