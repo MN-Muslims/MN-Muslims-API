@@ -10,10 +10,10 @@ const getCarousels = async (req, res) => {
 
 // create organization post
 const createCarouselData = async(req, res) => {
-    const {description1, description2, description3, image1, image2, image3} = req.body
+    const {description1, description2, description3} = req.body
     // add doc to db
     try{
-        const carousel = await Carousel.create({description1, description2, description3, image1, image2, image3})
+        const carousel = await Carousel.create({description1, description2, description3})
         res.status(200).json(carousel)
     } catch (error) {
         res.status(400).json({error: error.message})
