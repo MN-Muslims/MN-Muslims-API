@@ -14,16 +14,16 @@
 <a>https://mnmuslims-api.onrender.com/uploads3</a>
 
 <h3>Install Dependencies</h3>
+
 ```
 npm install
-
 ```
 
 <h3>Run Node API</h3>
 First remember to cd into your directory and then write this command:
+
 ```
 nodemon server.js
-
 ```
 
 <h3>Hosting Service:</h3>
@@ -72,5 +72,4 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
  }
 
  getMasjids().catch(console.error);
-
 ```
