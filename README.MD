@@ -1,17 +1,17 @@
 <h2>Important API Information</h2>
 
 <h3>API Links</h3>
-<a>https://mnmuslims-api.onrender.com/api/businesses</a>
+https://mnmuslims-api.onrender.com/api/businesses
 <br/>
-<a>https://mnmuslims-api.onrender.com/api/masjids</a>
+https://mnmuslims-api.onrender.com/api/masjids
 <br/>
-<a>https://mnmuslims-api.onrender.com/api/carousel</a>
+https://mnmuslims-api.onrender.com/api/carousel
 <br/>
-<a>https://mnmuslims-api.onrender.com/uploads</a>
+https://mnmuslims-api.onrender.com/uploads
 <br/>
-<a>https://mnmuslims-api.onrender.com/uploads2</a>
+https://mnmuslims-api.onrender.com/uploads2
 <br/>
-<a>https://mnmuslims-api.onrender.com/uploads3</a>
+https://mnmuslims-api.onrender.com/uploads3
 
 <h3>Install Dependencies</h3>
 
@@ -43,7 +43,7 @@ In order to put the masjid data from the excel sheet onto MongoDB Atlas I first 
 
 Please make sure to setup a MongoDB cluster before you execute this code. Here is an informative tutorial on how you can do this: https://www.youtube.com/watch?v=s0anSjEeua8&ab_channel=TheNetNinja
 
-<br />
+<!-- <br /> -->
 
 <h3>Code for JSON upload to MongoDB:</h3>
 
