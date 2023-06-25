@@ -11,15 +11,6 @@ const carouselSchema = new Schema({
     description3: {
         type: Schema.Types.Mixed,
     },
-    image1: {
-        type: String,
-    },
-    image2: {
-        type: String,
-    },
-    image3: {
-        type: String,
-    },
 }, { timestamps: true });
 
 module.exports = mongoose.model('announcements', carouselSchema);
