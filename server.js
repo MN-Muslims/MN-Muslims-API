@@ -15,9 +15,6 @@ const bcrypt = require('bcryptjs');
 
 
 
-
-
-
 // Configure multer storage for the first image uploader
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -94,6 +91,9 @@ app.use('/api/carousel', carouselRoutes)
 
 // Users Routes
 app.use('/api/users', usersRoutes)
+
+// get all users
+// app.use('/api/users', usersRoutes)
 
 // connect to db
 mongoose.connect(process.env.MONGO_URI)
