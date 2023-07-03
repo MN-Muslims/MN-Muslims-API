@@ -32,6 +32,9 @@ Currently the API is being hosted using onrender which is a free hosting service
 <h3>Deploy API</h3>
 All of the steps for deployment can be found in this video: https://www.youtube.com/watch?v=bnCOyGaSe84&ab_channel=CodeBrah
 
+<h3>Deploy API with hidden .env file</h3>
+In order to deploy the API to onrender with a hidden .env you can follow this tutorial, go to 16:24 in the tutorial: https://www.youtube.com/watch?v=68ubggfsQlE
+
 <h3>Add any features:</h3>
 If you want to add any new features which will involve the installation of a package then make sure that you dont have your node_modules folder in your .gitignore file. This is because when you deploy your changes Onrender will not recognise any new packages that you have added because the .gitingore file will make Onrender ignore everything within that file like the node_modules folder so make sure to commit/push your changes to onrender before putting the folder in .gitignore and only add the node_modules folder after you have completed your changes.
 
