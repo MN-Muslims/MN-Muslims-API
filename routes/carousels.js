@@ -16,7 +16,7 @@ router.post('/', createCarouselData)
 // delete data
 router.delete('/:id', deleteCarouselData)
 
-// delete data
+// update data
 router.patch('/:id', updateCarouselData)
 
 module.exports = router

@@ -1,4 +1,3 @@
-// UserController.js
 const User = require('../models/AdminUserModel');
 const bcrypt = require('bcryptjs');
 
@@ -17,13 +16,11 @@ const UserController = {
     try {
       const { userId } = req.params;
 
-      // Find the user by userId
       const user = await User.findById(userId);
       if (!user) {
         return res.status(404).json({ message: 'User not found' });
       }
 
-      // Delete the user from the database
       await User.findByIdAndDelete(userId);
 
       res.json({ message: 'User deleted successfully' });
@@ -37,11 +34,6 @@ const UserController = {
     try {
       const { username, password } = req.body;
 
-      // Check if the username already exists
-      // const existingUser = await User.findOne({ username });
-      // if (existingUser) {
-      //   return res.status(400).json({ message: 'Username already taken' });
-      // }
 
       // Hash the password
       const hashedPassword = await bcrypt.hash(password, 10);

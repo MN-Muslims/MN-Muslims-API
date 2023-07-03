@@ -11,7 +11,7 @@ const getCarousels = async (req, res) => {
 // create organization post
 const createCarouselData = async(req, res) => {
     const {description1, description2, description3} = req.body
-    // add doc to db
+    // add to db
     try{
         const carousel = await Carousel.create({description1, description2, description3})
         res.status(200).json(carousel)
