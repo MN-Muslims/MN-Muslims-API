@@ -12,6 +12,8 @@ https://mnmuslims-api.onrender.com/uploads
 https://mnmuslims-api.onrender.com/uploads2
 <br/>
 https://mnmuslims-api.onrender.com/uploads3
+<br/>
+https://mnmuslims-api.onrender.com/api/users
 
 <h3>Install Dependencies</h3>
 
