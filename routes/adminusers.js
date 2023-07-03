@@ -1,14 +1,15 @@
-// routes.js
 const express = require('express');
 const router = express.Router();
 
 const UserController = require('../controllers/adminUserController');
 
+router.get('/', UserController.getAllUsers);
 
-// Registration route
 router.post('/register', UserController.register);
 
-// Login route
 router.post('/login', UserController.login);
+
+
+router.delete('/:userId', UserController.deleteUser);
 
 module.exports = router;

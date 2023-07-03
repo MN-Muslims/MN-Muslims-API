@@ -17,6 +17,7 @@ router.get('/:id', getBusiness)
 
 //POST new business
 router.post('/', createBusiness)
+
 //DELETE a business
 router.delete('/:id', deleteBusiness)
 

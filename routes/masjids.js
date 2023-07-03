@@ -8,5 +8,4 @@ const {
 router.get('/', getMasjids)
 
 
-// Export the router
 module.exports = router;

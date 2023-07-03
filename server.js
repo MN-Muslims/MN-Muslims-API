@@ -8,13 +8,8 @@ const usersRoutes = require('./routes/adminusers')
 
 const express = require('express')
 const multer = require('multer');
-
 const path = require('path');
 const fs = require('fs');
-const bcrypt = require('bcryptjs');
-
-
-
 
 
 
@@ -47,7 +42,7 @@ const storage2 = multer.diskStorage({
 const upload2 = multer({ storage: storage2 });
 
 
-
+// Configure multer storage for the third image uploader
 const storage3 = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, 'uploads3/');
@@ -61,7 +56,6 @@ const storage3 = multer.diskStorage({
 const upload3 = multer({ storage: storage3 });
 
 
-// express app
 const app = express()
 
 app.use(function (req, res, next) {
@@ -83,19 +77,16 @@ app.use((req, res, next) => {
 let cors = require("cors");
 app.use(cors());
 
-// routes
 app.use('/api/businesses', businessRoutes)
 
-// masjid routes
 app.use('/api/masjids', masjidRoutes)
 
-// carousel routes
 app.use('/api/carousel', carouselRoutes)
 
-// Users Routes
+// admin Routes
 app.use('/api/users', usersRoutes)
 
-// connect to db
+
 mongoose.connect(process.env.MONGO_URI)
     .then(() => {
         app.listen(process.env.PORT, () => {
@@ -125,7 +116,7 @@ const imageSchema2 = new mongoose.Schema({
 const Image2 = mongoose.model('Image2', imageSchema2);
 
 
-
+// Define the third image schema
 const imageSchema3 = new mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
   filename: String,
@@ -155,6 +146,7 @@ app.post('/uploads', upload.single('image'), async (req, res) => {
   }
 });
 
+
 // Define the route for the second image upload
 app.post('/uploads2', upload2.single('image'), async (req, res) => {
   try {
@@ -176,7 +168,7 @@ app.post('/uploads2', upload2.single('image'), async (req, res) => {
 });
 
 
-// Define the route for the second image upload
+// Define the route for the third image upload
 app.post('/uploads3', upload3.single('image'), async (req, res) => {
   try {
     if (!req.file) {
@@ -220,7 +212,7 @@ app.get('/uploads2', async (req, res) => {
   }
 });
 
-// Add a route to fetch all images from the second uploader
+// Add a route to fetch all images from the third uploader
 app.get('/uploads3', async (req, res) => {
   try {
     const images = await Image3.find();
@@ -246,7 +238,7 @@ app.get('/uploads2/:filename', (req, res) => {
   res.sendFile(filePath);
 });
 
-// Add a route to serve individual image files from the second uploader
+// Add a route to serve individual image files from the third uploader
 app.get('/uploads3/:filename', (req, res) => {
   const { filename } = req.params;
   const filePath = path.join(__dirname, 'uploads3', filename);
@@ -262,7 +254,7 @@ app.delete('/uploads/:id', async (req, res) => {
       return res.status(404).json({ message: 'Image not found' });
     }
 
-    // Delete the image file from the folder
+    // Delete the image file from the first uploads folder
     const imagePath = path.join(__dirname, '/uploads', image.filename);
     fs.unlink(imagePath, (err) => {
       if (err) {
@@ -277,7 +269,8 @@ app.delete('/uploads/:id', async (req, res) => {
   }
 });
 
-// Delete an image by ID from the second uploader
+
+// Delete an image by ID from the second uploads folder
 app.delete('/uploads2/:id', async (req, res) => {
   try {
     const image = await Image2.findByIdAndDelete(req.params.id);
@@ -301,7 +294,7 @@ app.delete('/uploads2/:id', async (req, res) => {
 });
 
 
-// Delete an image by ID from the second uploader
+// Delete an image by ID from the third uploads folder
 app.delete('/uploads3/:id', async (req, res) => {
   try {
     const image = await Image3.findByIdAndDelete(req.params.id);
