@@ -27,7 +27,7 @@ nodemon server.js
 ```
 
 <h3>Hosting Service:</h3>
-Currently the API is being hosted using onrender which is a free hosting service. Onrender is connected to my forked repo of the API and that is how it is currently being hosted but if you want to host it yourself or if you want to make some changes to the API then here I will discuss a few things you will need to know.
+Currently the API is being hosted using onrender which is a free hosting service: https://render.com. Onrender is connected to my forked repo of the API and that is how it is currently being hosted but if you want to host it yourself or if you want to make some changes to the API then here I will discuss a few things you will need to know.
 
 <h3>Deploy API</h3>
 All of the steps for deployment can be found in this video: https://www.youtube.com/watch?v=bnCOyGaSe84&ab_channel=CodeBrah
